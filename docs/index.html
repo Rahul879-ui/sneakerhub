@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SneakerHub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<canvas id="particles"></canvas>
+
+<!-- LOADER -->
+<div id="loader">
+<div class="spinner"></div>
+</div>
+
+<!-- NAVBAR -->
+<header>
+
+<div class="logo">
+<a href="index.html">
+<img src="images/logo.png" alt="SneakerHub Logo">
+</a>
+</div>
+
+<button id="theme-toggle">🌙</button>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+<li><a href="#footer">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<!-- SEARCH -->
+<div class="search-box">
+<input type="text" id="search" placeholder="Search sneakers...">
+</div>
+
+<!-- FILTER -->
+<div class="filter-buttons">
+<button onclick="filterProducts('all')">All</button>
+<button onclick="filterProducts('nike')">Nike</button>
+<button onclick="filterProducts('adidas')">Adidas</button>
+<button onclick="filterProducts('puma')">Puma</button>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+
+<h1>Best Sneakers Collection</h1>
+<p>Find the best sneakers with amazing style and comfort.</p>
+
+<button onclick="document.getElementById('products').scrollIntoView()">
+Shop Now
+</button>
+
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+
+<h2>Popular Sneakers</h2>
+
+<div class="product-container">
+
+<div class="product nike">
+<img src="images/nike1.jpg" alt="Nike Air Max">
+<h3>Nike Air Max</h3>
+<p>$120</p>
+<div class="rating">⭐ ⭐ ⭐ ⭐ ☆</div>
+<button>Add to Cart</button>
+</div>
+
+<div class="product nike">
+<img src="images/nike2.jpg" alt="Nike Revolution">
+<h3>Nike Revolution</h3>
+<p>$110</p>
+<div class="rating">⭐ ⭐ ⭐ ⭐ ☆</div>
+<button>Add to Cart</button>
+</div>
+
+<div class="product adidas">
+<img src="images/adidas1.jpg" alt="Adidas Ultraboost">
+<h3>Adidas Ultraboost</h3>
+<p>$140</p>
+<div class="rating">⭐ ⭐ ⭐ ⭐ ⭐</div>
+<button>Add to Cart</button>
+</div>
+
+<div class="product adidas">
+<img src="images/adidas2.jpg" alt="Adidas RunFalcon">
+<h3>Adidas RunFalcon</h3>
+<p>$100</p>
+<div class="rating">⭐ ⭐ ⭐ ⭐ ☆</div>
+<button>Add to Cart</button>
+</div>
+
+<div class="product puma">
+<img src="images/puma1.jpg" alt="Puma RS-X">
+<h3>Puma RS-X</h3>
+<p>$115</p>
+<div class="rating">⭐ ⭐ ⭐ ⭐ ☆</div>
+<button>Add to Cart</button>
+</div>
+
+<div class="product puma">
+<img src="images/puma2.jpg" alt="Puma Velocity">
+<h3>Puma Velocity</h3>
+<p>$105</p>
+<div class="rating">⭐ ⭐ ⭐ ⭐ ☆</div>
+<button>Add to Cart</button>
+</div>
+
+<div class="product jordan">
+<img src="images/jordan1.jpg" alt="Air Jordan Retro">
+<h3>Air Jordan Retro</h3>
+<p>$180</p>
+<div class="rating">⭐ ⭐ ⭐ ⭐ ⭐</div>
+<button>Add to Cart</button>
+</div>
+
+<div class="product jordan">
+<img src="images/jordan2.jpg" alt="Jordan Delta">
+<h3>Jordan Delta</h3>
+<p>$170</p>
+<div class="rating">⭐ ⭐ ⭐ ⭐ ☆</div>
+<button>Add to Cart</button>
+</div>
+
+</div>
+
+</section>
+
+<!-- IMAGE MODAL -->
+<div id="image-modal" class="modal">
+<span class="close">&times;</span>
+<img class="modal-content" id="modal-img">
+</div>
+
+<!-- TOAST -->
+<div id="toast">Item Added to Cart 🛒</div>
+
+<!-- FOOTER -->
+<footer id="footer">
+
+<div class="footer-container">
+
+<h2>SneakerHub</h2>
+<p>Your favorite place to buy stylish sneakers.</p>
+
+<div class="social">
+<a href="#">Instagram</a>
+<a href="#">Facebook</a>
+<a href="#">Twitter</a>
+</div>
+
+<p class="copy">© 2026 SneakerHub. All Rights Reserved.</p>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
